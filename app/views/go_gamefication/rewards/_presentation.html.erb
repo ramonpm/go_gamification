@@ -1,0 +1,7 @@
+<% if rewards.any? %>
+  <div class="reward-presentation">
+    <% rewards.each do |reward| %>
+      <%= render reward %>
+    <% end %>
+  </div>
+<% end %>
