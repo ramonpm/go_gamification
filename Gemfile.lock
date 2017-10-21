@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    go_gamification (0.0.3)
+    go_gamification (0.0.5)
       draper
       pg
       rails

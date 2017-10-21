@@ -4,13 +4,13 @@ require 'carrierwave'
 class GoGamification::ImageUploader < CarrierWave::Uploader::Base
 
   # Include MiniMagick support
-  include CarrierWave::MiniMagick
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
-  def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-  end
+
+  include CarrierWave::MiniMagick
+  include CarrierWave::RMagick
+  include Cloudinary::CarrierWave
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
@@ -31,6 +31,14 @@ class GoGamification::ImageUploader < CarrierWave::Uploader::Base
   version :small do
     process :resize_to_fit => [150, 150]
   end
+
+  version :icon64 do
+    process :resize_to_fit => [64, 64]
+  end
+  version :icon32 do
+    process :resize_to_fit => [32, 32]
+  end
+
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
