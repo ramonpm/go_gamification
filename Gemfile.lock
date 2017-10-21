@@ -1,10 +1,11 @@
 PATH
   remote: .
   specs:
-    go_gamification (0.0.1)
+    go_gamification (0.0.3)
       draper
       pg
       rails
+      sqlite3
 
 GEM
   remote: https://rubygems.org/
@@ -129,7 +130,6 @@ PLATFORMS
 
 DEPENDENCIES
   go_gamification!
-  sqlite3
 
 BUNDLED WITH
    1.16.0.pre.2

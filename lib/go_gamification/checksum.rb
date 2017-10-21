@@ -1,4 +1,4 @@
-module GoGamefication
+module GoGamification
   module Checksum
     # Generate a checksum from the given values.
     #

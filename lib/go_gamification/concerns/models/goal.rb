@@ -1,4 +1,4 @@
-module GoGamefication::Concerns::Models::Goal
+module GoGamification::Concerns::Models::Goal
   extend ActiveSupport::Concern
 
   included do
@@ -26,7 +26,7 @@ module GoGamefication::Concerns::Models::Goal
       if completed_by? subject
         raise Completed, "#{self} is already completed for #{subject}"
       else
-        ::GoGamefication::Reward.create! goal: self, rewardable: subject
+        ::GoGamification::Reward.create! goal: self, rewardable: subject
       end
     end
 

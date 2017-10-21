@@ -1,4 +1,4 @@
-module GoGamefication
+module GoGamification
   module ApplicationHelper
 
     # Create a form to reward someone for something.

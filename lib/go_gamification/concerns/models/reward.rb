@@ -1,8 +1,8 @@
-module GoGamefication::Concerns::Models::Reward
+module GoGamification::Concerns::Models::Reward
   extend ActiveSupport::Concern
 
   included do
-    belongs_to :goal, class_name: 'GoGamefication::Goal'
+    belongs_to :goal, class_name: 'GoGamification::Goal'
     belongs_to :rewardable, polymorphic: true, inverse_of: :rewards
 
     scope :unseen, -> { where seen_at: nil }

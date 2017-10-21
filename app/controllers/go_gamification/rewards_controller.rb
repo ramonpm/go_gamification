@@ -1,7 +1,7 @@
 require_dependency "go_gamification/application_controller"
 
-module GoGamefication
+module GoGamification
   class RewardsController < ApplicationController
-    include GoGamefication::Concerns::Controllers::RewardsController
+    include GoGamification::Concerns::Controllers::RewardsController
   end
 end

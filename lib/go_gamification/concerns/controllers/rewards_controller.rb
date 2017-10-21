@@ -1,4 +1,4 @@
-module GoGamefication
+module GoGamification
   module Concerns::Controllers::RewardsController
     extend ActiveSupport::Concern
 
@@ -6,7 +6,7 @@ module GoGamefication
       before_action :verify_checksum
 
       def create
-        if rewarding.is_a? ::GoGamefication::Goal
+        if rewarding.is_a? ::GoGamification::Goal
           rewarding.complete_for rewardable
         else
           rewarding.goals.each do |goal|

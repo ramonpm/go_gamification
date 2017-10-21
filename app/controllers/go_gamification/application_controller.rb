@@ -1,4 +1,4 @@
-module GoGamefication
+module GoGamification
   class ApplicationController < ::ApplicationController
   end
 end

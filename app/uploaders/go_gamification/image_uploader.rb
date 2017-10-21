@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'carrierwave'
 
-class GoGamefication::ImageUploader < CarrierWave::Uploader::Base
+class GoGamification::ImageUploader < CarrierWave::Uploader::Base
 
   # Include MiniMagick support
   include CarrierWave::MiniMagick

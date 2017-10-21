@@ -1,8 +1,4 @@
-module GoGamefication
-  class Engine < ::Rails::Engine
-  end
-end
-module GoGamefication
+module GoGamification
   class Engine < ::Rails::Engine
         initializer :append_migrations do |app|
       # This prevents migrations from being loaded twice from the inside of the
@@ -14,13 +10,13 @@ module GoGamefication
       end
     end
 
-    initializer 'go_gamefication.action_controller' do |app|
+    initializer 'go_gamification.action_controller' do |app|
       ActiveSupport.on_load :action_controller do
-        helper GoGamefication::ApplicationHelper
+        helper GoGamification::ApplicationHelper
       end
     end
 
-    initializer 'go_gamefication.factories', after: 'factory_girl.set_factory_paths' do
+    initializer 'go_gamification.factories', after: 'factory_girl.set_factory_paths' do
       FactoryGirl.definition_file_paths << File.expand_path('../../../spec/factories', __FILE__) if defined?(FactoryGirl)
     end
 

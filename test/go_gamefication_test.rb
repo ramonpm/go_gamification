@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class GoGameficationTest < ActiveSupport::TestCase
+class GoGamificationTest < ActiveSupport::TestCase
   test "truth" do
-    assert_kind_of Module, GoGamefication
+    assert_kind_of Module, GoGamification
   end
 end

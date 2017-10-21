@@ -1,4 +1,4 @@
-module GoGamefication
+module GoGamification
   module RewardsHelper
 
     # Present unseen rewards for the given user.

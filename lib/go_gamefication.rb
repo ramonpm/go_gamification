@@ -1,7 +1,7 @@
-require "go_gamefication/engine"
-require "go_gamefication/engine"
-require "go_gamefication/concerns"
-require "go_gamefication/activerecord"
-require "go_gamefication/checksum"
-module GoGamefication
+require "go_gamification/engine"
+require "go_gamification/engine"
+require "go_gamification/concerns"
+require "go_gamification/activerecord"
+require "go_gamification/checksum"
+module GoGamification
 end
