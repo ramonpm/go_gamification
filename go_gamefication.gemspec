@@ -5,7 +5,7 @@ require "go_gamefication/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "go_gamefication"
+  s.name        = "go_gamification"
   s.version     = GoGamefication::VERSION
   s.authors     = ["João Carlos Ottobboni"]
   s.email       = ["jcottobboni@gmail.com"]
