@@ -1,6 +1,6 @@
 class RenameEverything < ActiveRecord::Migration[5.1]
   def change
-        rename_table :go_gamification_scorings, :gamification_rewards
+        rename_table :go_gamification_scorings, :go_gamification_rewards
     rename_column :go_gamification_rewards, :subjectable_id, :rewardable_id
     rename_column :go_gamification_rewards, :subjectable_type, :rewardable_type
 

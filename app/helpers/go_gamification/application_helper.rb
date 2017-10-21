@@ -1,6 +1,7 @@
 module GoGamification
   module ApplicationHelper
 
+
     # Create a form to reward someone for something.
     #
     # rewardable - A model that is rewardable (e.g. a user)
